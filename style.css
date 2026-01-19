@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+  --bg-primary: #1A0B2E;
+  --bg-secondary: #230E3D;
+  --text-color: #fff;
+  --number-color: #00FF88;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.main-header{
+    background: var(--bg-primary);
+    padding: 25px 0;
+    border-bottom: 1px solid #412567;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.header-row{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 24px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+}
+
+.h-btn-link{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 16px;
+    background: linear-gradient(24deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.mobile-menu{
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero section  */
+
+.hero-section{
+    padding: 100px 0;
+    background: url(assets/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero-top{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    /* border: 1px solid #9100f875; */
+    /* border-image: linear-gradient(237.26deg, rgba(247, 233, 63, 1) 19.385%,rgba(251, 9, 180, 1) 56.359%,rgba(145, 0, 248, 1) 91.712%) 1; */
+    margin: auto;
+    position: relative;
+    background-image: url(assets/circle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.t-hero-btn-link{
+    font-size: 18px;
+    font-weight: 600;
+    background: #00FF88;
+    padding: 6px 16px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 38px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 18px #ffffff88;
+}
+
+.hero-ttile{
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 5.5px;
+    
+}
+
+.hero-text{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.hero-btn-link{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 50px;
+}
+.spotify-btn{
+    background: linear-gradient(24deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    color: #fff;
+
+}
+
+.subs-btn{
+    color: #00FF88;
+    border: 2px solid #00FF88;
+    padding: 8px 22px;
+    margin-left: 10px;
+}
+
+/* About section  */
+
+.about-podcast-section{
+    padding: 50px 0 120px;
+    background: #1A0B2E;
+    text-align: center;
+}
+
+.about-title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+.about-text{
+    color: #fff;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.about-podcast-content hr{
+    color: #fff;
+    opacity: 0.1;
+    margin: 80px 0;
+}
+.about-bottom-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.count-number{
+    font-size: 48px;
+    font-weight: 700;
+    color: #00FF88;
+}
+.count-text{
+    font-size: 16px;
+    color: #fff;
+}
+
+.why-choose-section{
+    background: #230E3D;
+    padding: 120px 0;
+}
+
+.why-choose-title{
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choose-box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+}
+
+.choose-big-height{
+    grid-row: span 2;
+}
+
+.choose-large{
+    grid-column: span 2;
+}
+
+.choose-box-item{
+    padding: 40px;
+    background: #351165;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box-title{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.box-text{
+    color: #ffffffcb;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    
+}
+
+@media screen and (max-width: 1080px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 820px){
+    .about-bottom-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .choose-box-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .choose-big-height{
+        grid-row: span 1;
+    }
+    .choose-large{
+        grid-column: span 1;
+    }
+    .choose-large-sm{
+        grid-column: span 2;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+    .main-menu{
+        display: none;
+    }
+    .header-right{
+        display: none;
+    }
+    .header-row {
+        justify-content: space-between;
+    }
+    .header-row{
+        grid-template-columns: repeat(2, auto);
+    }
+    .hero-btn-link{
+    font-size: 12px;
+    }
+    .subs-btn{
+        margin: 10px 0 0 0;
+    }
+    .hero-top {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-top img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero-section{
+        padding: 40px 0;
+        background-image: url(assets/hero-mobile-bg.png);
+    }
+
+    .hero-ttile{
+        font-size: 40px;
+    }
+
+    .about-bottom-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .count-number{
+        font-size: 40px;
+    }
+
+    .about-podcast-content hr{
+        margin: 40px 0;
+    }
+    .about-podcast-section{
+        padding: 40px 0;
+    }
+
+    .why-choose-title{
+        font-size: 28px;
+    }
+
+    .box-title{
+        font-size: 22px;
+    }
+
+    .choose-box-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .choose-big-height{
+        grid-row: span 1;
+    }
+    .choose-large{
+        grid-column: span 1;
+    }
+    .choose-large-sm{
+        grid-column: span 1;
+    }
+}
+
+
+
